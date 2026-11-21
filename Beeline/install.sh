@@ -20,7 +20,7 @@ curl -fsSL "$HOSTS_URL" --output "$HOSTS_DEST" \
     && echo "[+] Список доменов сохранён в $HOSTS_DEST" \
     || echo "[!] Ошибка скачивания списка доменов"
 download_and_enable getconfig \
-    "https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/Beeline/getconfig"
+    "https://raw.githubusercontent.com/medvedicos/getconfig2/refs/heads/main/Beeline/getconfig"
 download_and_enable getexclude \
     "https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/getexclude"
 # Добавляем cron только если записи ещё нет
