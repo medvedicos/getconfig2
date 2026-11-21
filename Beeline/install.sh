@@ -13,7 +13,7 @@ download_and_enable() {
 }
 # Единоразовое скачивание списка доменов
 HOSTS_URL="https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/zapret-hosts-auto.txt"
-HOSTS_DEST="/opt/zapret/ipset/zapret-hosts-auto.txt"
+HOSTS_DEST="/opt/zapret2/ipset/zapret-hosts-auto.txt"
 echo "[*] Скачиваем список доменов..."
 mkdir -p "$(dirname "$HOSTS_DEST")"
 curl -fsSL "$HOSTS_URL" --output "$HOSTS_DEST" \
