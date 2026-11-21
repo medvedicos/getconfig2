@@ -1,0 +1,57 @@
+# Установка
+
+## Россия
+
+- **Ростелеком**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/install.sh && chmod 777 install.sh && sh install.sh
+```
+- **Beeline**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/Beeline/install.sh && chmod 777 install.sh && sh install.sh
+```
+- **Megafon**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/Megafon/install.sh && chmod 777 install.sh && sh install.sh
+```
+
+## Сочи
+
+- **Dtel**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/Dtel/install.sh && chmod 777 install.sh && sh install.sh
+```
+
+- **SlavCom**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/SlavCom/install.sh && chmod 777 install.sh && sh install.sh
+```
+
+- **GigLAN**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/giglan/install.sh && chmod 777 install.sh && sh install.sh
+```
+
+- **Бизнес Связь**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/BusinesSvyaz/install.sh && chmod 777 install.sh && sh install.sh
+```
+
+- **Сочи Онлайн**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/sochi-online/install.sh && chmod 777 install.sh && sh install.sh
+```
+
+## Калининград
+
+- **Тис-Диалог (Калининград)**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/kaliningrad/tis-dialog/install.sh && chmod 777 install.sh && sh install.sh
+```
+
+## Омск
+
+- **Омские Кабельные Сети (OKS) (Омск)**
+```
+/etc/init.d/zapret stop && wget https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/omsk/OKS/install.sh && chmod 777 install.sh && sh install.sh
+```

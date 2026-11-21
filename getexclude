@@ -1,0 +1,19 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+
+start () {
+	/etc/init.d/zapret stop
+	DOMAINS=https://raw.githubusercontent.com/medvedicos/getconfig/refs/heads/main/zapret-hosts-user-exclude.txt
+	while true; do
+		if curl -m 3 github.com; then
+			curl -f $DOMAINS --output /opt/zapret/ipset/zapret-hosts-user-exclude.txt
+			break
+		else
+			sleep 10
+		fi
+	done
+	
+    /etc/init.d/zapret start
+    
+}
