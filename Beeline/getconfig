@@ -7,13 +7,13 @@ start () {
 	DOMAINS=https://raw.githubusercontent.com/medvedicos/getconfig2/refs/heads/main/Beeline/config
 	while true; do
 		if curl -m 3 github.com; then
-			curl -f $DOMAINS --output /opt/zapret/config
+			curl -f $DOMAINS --output /opt/zapret2/config
 			break
 		else
 			sleep 10
 		fi
 	done
 	
-    /etc/init.d/zapret start
+    /etc/init.d/zapret2 start
     
 }
