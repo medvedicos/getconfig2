@@ -1,1 +1,19 @@
+#!/bin/sh /etc/rc.common
 
+START=99
+
+start () {
+	/etc/init.d/zapret stop
+	DOMAINS=https://raw.githubusercontent.com/medvedicos/getconfig2/refs/heads/main/BiznesSvyaz/config
+	while true; do
+		if curl -m 3 github.com; then
+			curl -f $DOMAINS --output /opt/zapret2/config
+			break
+		else
+			sleep 10
+		fi
+	done
+	
+    /etc/init.d/zapret2 start
+    
+}
