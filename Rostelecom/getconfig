@@ -3,7 +3,7 @@
 START=99
 
 start () {
-	/etc/init.d/zapret stop
+	/etc/init.d/zapret2 stop
 	DOMAINS=https://raw.githubusercontent.com/medvedicos/getconfig2/refs/heads/main/Rostelecom/config
 	while true; do
 		if curl -m 3 github.com; then
